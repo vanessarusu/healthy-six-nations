@@ -1,0 +1,50 @@
+html, body {
+    overflow-x: hidden;
+}
+
+::selection {
+    background: $light-blue;
+}
+
+body, div, h1, h2, h3, h4, h5, h6, p, span, a {
+    color: $deep-blue;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    transition: 0.2s ease-in-out;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+
+///// ----
+
+.light-blue {
+    color: $light-blue;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.blue-separator {
+    &.bottom:after {
+        content: '';
+        height: 2px;
+        width: 120px;
+        background: $deep-blue;
+        display: block;
+        margin: auto;
+    }
+
+    &.top:before {
+        content: '';
+        height: 2px;
+        width: 120px;
+        background: $deep-blue;
+        display: block;
+        margin: auto;
+    }
+}

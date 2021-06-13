@@ -1,0 +1,12 @@
+
+.fl-page-footer-text {
+    text-align: left !important;
+}
+body:not(.fl-builder-edit) {
+    .footer-image {
+        position: absolute;
+        right: 20px;
+        bottom: -60px;
+    }
+
+}
