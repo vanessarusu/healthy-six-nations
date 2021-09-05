@@ -47,3 +47,47 @@ nav.fl-page-nav,
 .fl-page-nav-wrap {
     display: none;
 }
+
+body:not(.home) {
+
+    @media (min-width: 1550px) {
+        header {
+
+            .fl-page-header-logo {
+                    max-width: 380px;
+                    margin: auto;
+                    left: 100px;
+                    right: auto;
+                }
+            }
+
+            .fl-page-header-container.container {
+                max-width: 100%;
+                width: 100%;
+            }
+    }
+
+    @media (max-width: 1550px) {
+        header {
+
+            .fl-page-header-logo {
+                    max-width: 280px;
+                }
+            }
+
+            .fl-page-header-container.container {
+                max-width: 100%;
+                width: 100%;
+            }
+    }
+    
+    .page-heading {
+        @media(max-width: 1500px) {
+            margin-top: 300px;
+        }
+
+        @media(max-width: 800px) {
+            margin-top: 200px;
+        }
+    }
+}

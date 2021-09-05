@@ -40,3 +40,65 @@
         display: none;
     }
 }
+
+.hover-icon {
+    display: none;
+}
+
+.hover-column {
+    position: relative;
+
+    &:before {
+        pointer-events: none;
+        opacity: 0;
+        transition: all 0.1s ease-in-out;
+        width: 103%;
+        height: 120%;
+        background: $light-blue;
+        display: block;
+        position: absolute;
+        top: -5%;
+        border-radius: 100%;
+        left: -1%;
+        right: 0;
+
+        @media (max-width: 1200px) {
+            height: 110%;
+        }
+
+        @media (max-width: 1200px) {
+            height: 100%;
+            top: 0%;
+        }
+
+        @media (max-width: 990px) {
+            height: 110%;
+            width: 110%;
+            left: -5%
+        }
+
+        @media (max-width: 800px) {
+            height: 95%;
+            width: 120%;
+            left: -10%;
+            top: 2%
+        }
+    }
+    @media (min-width: 800px) {
+        &:hover {
+            cursor: pointer;
+            .fl-heading-text {
+                color: #fff !important;
+            }
+            .blue-icon {
+                display: none;
+            }
+            .hover-icon {
+                display: block;
+            }
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+}
