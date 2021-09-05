@@ -11,17 +11,25 @@
 .speech-bubble {
     position: relative;
     z-index: 0;
+
     &:after {
         content: '';
         position: absolute;
         bottom: -60px;
         left: 20%;
-            display: inline-block;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 80px 0 80px 90px;
-            border-color: transparent transparent transparent $baby-blue;
-            z-index: -10;
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 80px 0 80px 90px;
+        border-color: transparent transparent transparent $baby-blue;
+        z-index: -10;
+        @media (max-width: 1000px) {
+            border-width: 40px 0 40px 50px;
+            bottom: -40px;
+        }
+    }
+    @media (min-width: 990px) and (max-width: 1300px) {
+        margin-bottom: 140px;
     }
 }
